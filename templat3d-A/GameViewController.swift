@@ -12,60 +12,101 @@ class GameViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
-        
-        // create and add a camera to the scene
-        let cameraNode = SCNNode()
-        cameraNode.camera = SCNCamera()
-        scene.rootNode.addChildNode(cameraNode)
-        
-        // place the camera
-        cameraNode.position = SCNVector3(x: 0, y: 0, z: 15)
-        
-        // create and add a light to the scene
-        let lightNode = SCNNode()
-        lightNode.light = SCNLight()
-        lightNode.light!.type = .omni
-        lightNode.position = SCNVector3(x: 0, y: 10, z: 10)
-        scene.rootNode.addChildNode(lightNode)
-        
-        // create and add an ambient light to the scene
-        let ambientLightNode = SCNNode()
-        ambientLightNode.light = SCNLight()
-        ambientLightNode.light!.type = .ambient
-        ambientLightNode.light!.color = NSColor.darkGray
-        scene.rootNode.addChildNode(ambientLightNode)
-        
-        // retrieve the ship node
-        let ship = scene.rootNode.childNode(withName: "ship", recursively: true)!
-        
-        // animate the 3d object
-        ship.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: 2, z: 0, duration: 1)))
-        
-        // retrieve the SCNView
+                
         let scnView = self.view as! SCNView
-        
-        // set the scene to the view
-        scnView.scene = scene
-        
-        // allows the user to manipulate the camera
-        scnView.allowsCameraControl = true
-        
-        // show statistics such as fps and timing information
-        scnView.showsStatistics = true
-        
-        // configure the view
-        scnView.backgroundColor = NSColor.black
-        
-        // Add a click gesture recognizer
-        let clickGesture = NSClickGestureRecognizer(target: self, action: #selector(handleClick(_:)))
-        var gestureRecognizers = scnView.gestureRecognizers
-        gestureRecognizers.insert(clickGesture, at: 0)
-        scnView.gestureRecognizers = gestureRecognizers
+            scnView.scene = MyScene()
+            scnView.backgroundColor = NSColor.black
+            scnView.autoenablesDefaultLighting = true
+            scnView.allowsCameraControl = true
     }
+}
+
+class MyScene: SCNScene {
+  
+  override init() {
+    super.init()
     
+  /*  let plane = SCNPlane(width: 1.0, height: 1.0)
+    plane.firstMaterial?.diffuse.contents = NSColor.blue
+    let planeNode = SCNNode(geometry: plane)
+            
+    rootNode.addChildNode(planeNode)
+    //
+    let sphere = SCNSphere(radius: 1.0)
+    sphere.firstMaterial?.diffuse.contents = NSColor.red
+    let sphereNode = SCNNode(geometry: sphere)
+    sphereNode.position = SCNVector3(x: 0.0, y: 3.0, z: 0.0)
+        
+    rootNode.addChildNode(sphereNode)
+    //
+    let box = SCNBox(width: 1.0, height: 1.0, length: 1.0, chamferRadius: 0.2)
+    box.firstMaterial?.diffuse.contents = NSColor.green
+    let boxNode = SCNNode(geometry: box)
+    boxNode.position = SCNVector3(x: 0.0, y: -3.0, z: 0.0)
+        
+    rootNode.addChildNode(boxNode)
+        
+    let cylinder = SCNCylinder(radius: 1.0, height: 1.0)
+    cylinder.firstMaterial?.diffuse.contents = NSColor.yellow
+    let cylinderNode = SCNNode(geometry: cylinder)
+    cylinderNode.position = SCNVector3(x: -3.0, y: 3.0, z: 0.0)
+        
+    rootNode.addChildNode(cylinderNode)
+        
+    let torus = SCNTorus(ringRadius: 1.0, pipeRadius: 0.3)
+    torus.firstMaterial?.diffuse.contents = NSColor.white
+    let torusNode = SCNNode(geometry: torus)
+    torusNode.position = SCNVector3(x: -3.0, y: 0.0, z: 0.0)
+        
+    rootNode.addChildNode(torusNode)
+        
+    let capsule = SCNCapsule(capRadius: 0.3, height: 1.0)
+    capsule.firstMaterial?.diffuse.contents = NSColor.gray
+    let capsuleNode = SCNNode(geometry: capsule)
+    capsuleNode.position = SCNVector3(x: -3.0, y: -3.0, z: 0.0)
+        
+    rootNode.addChildNode(capsuleNode)
+        
+    let cone = SCNCone(topRadius: 1.0, bottomRadius: 2.0, height: 1.0)
+    cone.firstMaterial?.diffuse.contents = NSColor.magenta
+    let coneNode = SCNNode(geometry: cone)
+    coneNode.position = SCNVector3(x: 3.0, y: -2.0, z: 0.0)
+        
+    rootNode.addChildNode(coneNode)*/
+        
+  /*  let tube = SCNTube(innerRadius: 1.0, outerRadius: 2.0, height: 1.0)
+    tube.firstMaterial?.diffuse.contents = NSColor.brown
+    let tubeNode = SCNNode(geometry: tube)
+    tubeNode.position = SCNVector3(x: 3.0, y: 2.0, z: 0.0)
+    rootNode.addChildNode(tubeNode)*/
+    let deaNode = SCNNode(named: "art.scnassets/boxA.dae")
+    deaNode.position = SCNVector3(x: 3.0, y: 2.0, z: 0.0)
+    rootNode.addChildNode(deaNode)
+  }
+    
+  required init(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+}
+
+extension SCNNode {
+
+    convenience init(named name: String) {
+        self.init()
+
+        guard let scene = SCNScene(named: name) else {
+            return
+        }
+
+        for childNode in scene.rootNode.childNodes {
+            addChildNode(childNode)
+        }
+    }
+
+}
+
+
+/*
     @objc
     func handleClick(_ gestureRecognizer: NSGestureRecognizer) {
         // retrieve the SCNView
@@ -102,3 +143,4 @@ class GameViewController: NSViewController {
         }
     }
 }
+*/
