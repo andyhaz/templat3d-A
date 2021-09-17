@@ -25,12 +25,20 @@ class MyScene: SCNScene {
   
   override init() {
     super.init()
+    //set up object
+    let grsObj = threeDObject()
     
-  /*  let plane = SCNPlane(width: 1.0, height: 1.0)
-    plane.firstMaterial?.diffuse.contents = NSColor.blue
-    let planeNode = SCNNode(geometry: plane)
-            
-    rootNode.addChildNode(planeNode)
+    //add floor
+    rootNode.addChildNode(grsObj.addFloorObj())
+    
+    //add plane
+    rootNode.addChildNode(grsObj.addPlanObj())
+
+    //load and extanle object
+    rootNode.addChildNode(grsObj.loadObj(name:"art.scnassets/boxA.dae"))
+//add a floor
+    
+    /*
     //
     let sphere = SCNSphere(radius: 1.0)
     sphere.firstMaterial?.diffuse.contents = NSColor.red
@@ -79,9 +87,6 @@ class MyScene: SCNScene {
     let tubeNode = SCNNode(geometry: tube)
     tubeNode.position = SCNVector3(x: 3.0, y: 2.0, z: 0.0)
     rootNode.addChildNode(tubeNode)*/
-    let deaNode = SCNNode(named: "art.scnassets/boxA.dae")
-    deaNode.position = SCNVector3(x: 3.0, y: 2.0, z: 0.0)
-    rootNode.addChildNode(deaNode)
   }
     
   required init(coder aDecoder: NSCoder) {
