@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9786FF3326F51EC700B1DC1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786FF3226F51EC700B1DC1B /* AppDelegate.swift */; };
+		9786FF3526F51EC700B1DC1B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786FF3426F51EC700B1DC1B /* GameViewController.swift */; };
+		9786FF3726F51EC700B1DC1B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 9786FF3626F51EC700B1DC1B /* art.scnassets */; };
+		9786FF3926F51EC800B1DC1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9786FF3826F51EC800B1DC1B /* Assets.xcassets */; };
+		9786FF3C26F51EC800B1DC1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9786FF3A26F51EC800B1DC1B /* Main.storyboard */; };
+		9786FF4826F51EC800B1DC1B /* templat3d_ATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786FF4726F51EC800B1DC1B /* templat3d_ATests.swift */; };
+		9786FF5326F51EC800B1DC1B /* templat3d_AUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786FF5226F51EC800B1DC1B /* templat3d_AUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9786FF4426F51EC800B1DC1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9786FF2726F51EC700B1DC1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9786FF2E26F51EC700B1DC1B;
+			remoteInfo = "templat3d-A";
+		};
+		9786FF4F26F51EC800B1DC1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9786FF2726F51EC700B1DC1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9786FF2E26F51EC700B1DC1B;
+			remoteInfo = "templat3d-A";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9786FF2F26F51EC700B1DC1B /* templat3d-A.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "templat3d-A.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9786FF3226F51EC700B1DC1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9786FF3426F51EC700B1DC1B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		9786FF3626F51EC700B1DC1B /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		9786FF3826F51EC800B1DC1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9786FF3B26F51EC800B1DC1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9786FF3D26F51EC800B1DC1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9786FF3E26F51EC800B1DC1B /* templat3d_A.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = templat3d_A.entitlements; sourceTree = "<group>"; };
+		9786FF4326F51EC800B1DC1B /* templat3d-ATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "templat3d-ATests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9786FF4726F51EC800B1DC1B /* templat3d_ATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = templat3d_ATests.swift; sourceTree = "<group>"; };
+		9786FF4926F51EC800B1DC1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9786FF4E26F51EC800B1DC1B /* templat3d-AUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "templat3d-AUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9786FF5226F51EC800B1DC1B /* templat3d_AUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = templat3d_AUITests.swift; sourceTree = "<group>"; };
+		9786FF5426F51EC800B1DC1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9786FF2C26F51EC700B1DC1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9786FF4026F51EC800B1DC1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9786FF4B26F51EC800B1DC1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9786FF2626F51EC700B1DC1B = {
+			isa = PBXGroup;
+			children = (
+				9786FF3126F51EC700B1DC1B /* templat3d-A */,
+				9786FF4626F51EC800B1DC1B /* templat3d-ATests */,
+				9786FF5126F51EC800B1DC1B /* templat3d-AUITests */,
+				9786FF3026F51EC700B1DC1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9786FF3026F51EC700B1DC1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9786FF2F26F51EC700B1DC1B /* templat3d-A.app */,
+				9786FF4326F51EC800B1DC1B /* templat3d-ATests.xctest */,
+				9786FF4E26F51EC800B1DC1B /* templat3d-AUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9786FF3126F51EC700B1DC1B /* templat3d-A */ = {
+			isa = PBXGroup;
+			children = (
+				9786FF3226F51EC700B1DC1B /* AppDelegate.swift */,
+				9786FF3426F51EC700B1DC1B /* GameViewController.swift */,
+				9786FF3626F51EC700B1DC1B /* art.scnassets */,
+				9786FF3826F51EC800B1DC1B /* Assets.xcassets */,
+				9786FF3A26F51EC800B1DC1B /* Main.storyboard */,
+				9786FF3D26F51EC800B1DC1B /* Info.plist */,
+				9786FF3E26F51EC800B1DC1B /* templat3d_A.entitlements */,
+			);
+			path = "templat3d-A";
+			sourceTree = "<group>";
+		};
+		9786FF4626F51EC800B1DC1B /* templat3d-ATests */ = {
+			isa = PBXGroup;
+			children = (
+				9786FF4726F51EC800B1DC1B /* templat3d_ATests.swift */,
+				9786FF4926F51EC800B1DC1B /* Info.plist */,
+			);
+			path = "templat3d-ATests";
+			sourceTree = "<group>";
+		};
+		9786FF5126F51EC800B1DC1B /* templat3d-AUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9786FF5226F51EC800B1DC1B /* templat3d_AUITests.swift */,
+				9786FF5426F51EC800B1DC1B /* Info.plist */,
+			);
+			path = "templat3d-AUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9786FF2E26F51EC700B1DC1B /* templat3d-A */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9786FF5726F51EC800B1DC1B /* Build configuration list for PBXNativeTarget "templat3d-A" */;
+			buildPhases = (
+				9786FF2B26F51EC700B1DC1B /* Sources */,
+				9786FF2C26F51EC700B1DC1B /* Frameworks */,
+				9786FF2D26F51EC700B1DC1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "templat3d-A";
+			productName = "templat3d-A";
+			productReference = 9786FF2F26F51EC700B1DC1B /* templat3d-A.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9786FF4226F51EC800B1DC1B /* templat3d-ATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9786FF5A26F51EC800B1DC1B /* Build configuration list for PBXNativeTarget "templat3d-ATests" */;
+			buildPhases = (
+				9786FF3F26F51EC800B1DC1B /* Sources */,
+				9786FF4026F51EC800B1DC1B /* Frameworks */,
+				9786FF4126F51EC800B1DC1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9786FF4526F51EC800B1DC1B /* PBXTargetDependency */,
+			);
+			name = "templat3d-ATests";
+			productName = "templat3d-ATests";
+			productReference = 9786FF4326F51EC800B1DC1B /* templat3d-ATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9786FF4D26F51EC800B1DC1B /* templat3d-AUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9786FF5D26F51EC800B1DC1B /* Build configuration list for PBXNativeTarget "templat3d-AUITests" */;
+			buildPhases = (
+				9786FF4A26F51EC800B1DC1B /* Sources */,
+				9786FF4B26F51EC800B1DC1B /* Frameworks */,
+				9786FF4C26F51EC800B1DC1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9786FF5026F51EC800B1DC1B /* PBXTargetDependency */,
+			);
+			name = "templat3d-AUITests";
+			productName = "templat3d-AUITests";
+			productReference = 9786FF4E26F51EC800B1DC1B /* templat3d-AUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9786FF2726F51EC700B1DC1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					9786FF2E26F51EC700B1DC1B = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					9786FF4226F51EC800B1DC1B = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 9786FF2E26F51EC700B1DC1B;
+					};
+					9786FF4D26F51EC800B1DC1B = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 9786FF2E26F51EC700B1DC1B;
+					};
+				};
+			};
+			buildConfigurationList = 9786FF2A26F51EC700B1DC1B /* Build configuration list for PBXProject "templat3d-A" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9786FF2626F51EC700B1DC1B;
+			productRefGroup = 9786FF3026F51EC700B1DC1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9786FF2E26F51EC700B1DC1B /* templat3d-A */,
+				9786FF4226F51EC800B1DC1B /* templat3d-ATests */,
+				9786FF4D26F51EC800B1DC1B /* templat3d-AUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9786FF2D26F51EC700B1DC1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9786FF3C26F51EC800B1DC1B /* Main.storyboard in Resources */,
+				9786FF3926F51EC800B1DC1B /* Assets.xcassets in Resources */,
+				9786FF3726F51EC700B1DC1B /* art.scnassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9786FF4126F51EC800B1DC1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9786FF4C26F51EC800B1DC1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9786FF2B26F51EC700B1DC1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9786FF3526F51EC700B1DC1B /* GameViewController.swift in Sources */,
+				9786FF3326F51EC700B1DC1B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9786FF3F26F51EC800B1DC1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9786FF4826F51EC800B1DC1B /* templat3d_ATests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9786FF4A26F51EC800B1DC1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9786FF5326F51EC800B1DC1B /* templat3d_AUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9786FF4526F51EC800B1DC1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9786FF2E26F51EC700B1DC1B /* templat3d-A */;
+			targetProxy = 9786FF4426F51EC800B1DC1B /* PBXContainerItemProxy */;
+		};
+		9786FF5026F51EC800B1DC1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9786FF2E26F51EC700B1DC1B /* templat3d-A */;
+			targetProxy = 9786FF4F26F51EC800B1DC1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9786FF3A26F51EC800B1DC1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9786FF3B26F51EC800B1DC1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9786FF5526F51EC800B1DC1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9786FF5626F51EC800B1DC1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9786FF5826F51EC800B1DC1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "templat3d-A/templat3d_A.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "templat3d-A/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gamerocketstudio.templat3d-A";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9786FF5926F51EC800B1DC1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "templat3d-A/templat3d_A.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "templat3d-A/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gamerocketstudio.templat3d-A";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9786FF5B26F51EC800B1DC1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "templat3d-ATests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gamerocketstudio.templat3d-ATests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/templat3d-A.app/Contents/MacOS/templat3d-A";
+			};
+			name = Debug;
+		};
+		9786FF5C26F51EC800B1DC1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "templat3d-ATests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gamerocketstudio.templat3d-ATests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/templat3d-A.app/Contents/MacOS/templat3d-A";
+			};
+			name = Release;
+		};
+		9786FF5E26F51EC800B1DC1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "templat3d-AUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gamerocketstudio.templat3d-AUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "templat3d-A";
+			};
+			name = Debug;
+		};
+		9786FF5F26F51EC800B1DC1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "templat3d-AUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gamerocketstudio.templat3d-AUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "templat3d-A";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9786FF2A26F51EC700B1DC1B /* Build configuration list for PBXProject "templat3d-A" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9786FF5526F51EC800B1DC1B /* Debug */,
+				9786FF5626F51EC800B1DC1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9786FF5726F51EC800B1DC1B /* Build configuration list for PBXNativeTarget "templat3d-A" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9786FF5826F51EC800B1DC1B /* Debug */,
+				9786FF5926F51EC800B1DC1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9786FF5A26F51EC800B1DC1B /* Build configuration list for PBXNativeTarget "templat3d-ATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9786FF5B26F51EC800B1DC1B /* Debug */,
+				9786FF5C26F51EC800B1DC1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9786FF5D26F51EC800B1DC1B /* Build configuration list for PBXNativeTarget "templat3d-AUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9786FF5E26F51EC800B1DC1B /* Debug */,
+				9786FF5F26F51EC800B1DC1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9786FF2726F51EC700B1DC1B /* Project object */;
+}
