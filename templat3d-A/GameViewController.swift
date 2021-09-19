@@ -25,8 +25,18 @@ class MyScene: SCNScene {
   
   override init() {
     super.init()
+    //set up cam
+    let grsCam = cammraObj()
+    //set up light
+    let grsLight = lightObj()
     //set up object
     let grsObj = threeDObject()
+    
+    //add cam
+    rootNode.addChildNode(grsCam.cam())
+    
+    //add light
+    rootNode.addChildNode(grsLight.spotOmni())
     
     //add floor
     rootNode.addChildNode(grsObj.addFloorObj())
@@ -36,7 +46,6 @@ class MyScene: SCNScene {
 
     //load and extanle object
     rootNode.addChildNode(grsObj.loadObj(name:"art.scnassets/boxA.dae"))
-//add a floor
     
     /*
     //

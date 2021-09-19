@@ -14,8 +14,8 @@
 		9786FF3C26F51EC800B1DC1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9786FF3A26F51EC800B1DC1B /* Main.storyboard */; };
 		9786FF4826F51EC800B1DC1B /* templat3d_ATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786FF4726F51EC800B1DC1B /* templat3d_ATests.swift */; };
 		9786FF5326F51EC800B1DC1B /* templat3d_AUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786FF5226F51EC800B1DC1B /* templat3d_AUITests.swift */; };
-		9786FF6126F52C8200B1DC1B /* camre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786FF6026F52C8200B1DC1B /* camre.swift */; };
-		9786FF6326F52C9E00B1DC1B /* light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786FF6226F52C9E00B1DC1B /* light.swift */; };
+		9786FF6126F52C8200B1DC1B /* camraObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786FF6026F52C8200B1DC1B /* camraObj.swift */; };
+		9786FF6326F52C9E00B1DC1B /* lightObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786FF6226F52C9E00B1DC1B /* lightObj.swift */; };
 		9786FF6526F52CBA00B1DC1B /* threeDObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786FF6426F52CBA00B1DC1B /* threeDObject.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,8 +51,8 @@
 		9786FF4E26F51EC800B1DC1B /* templat3d-AUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "templat3d-AUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9786FF5226F51EC800B1DC1B /* templat3d_AUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = templat3d_AUITests.swift; sourceTree = "<group>"; };
 		9786FF5426F51EC800B1DC1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9786FF6026F52C8200B1DC1B /* camre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = camre.swift; sourceTree = "<group>"; };
-		9786FF6226F52C9E00B1DC1B /* light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = light.swift; sourceTree = "<group>"; };
+		9786FF6026F52C8200B1DC1B /* camraObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = camraObj.swift; sourceTree = "<group>"; };
+		9786FF6226F52C9E00B1DC1B /* lightObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightObj.swift; sourceTree = "<group>"; };
 		9786FF6426F52CBA00B1DC1B /* threeDObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threeDObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,9 +137,9 @@
 		9786FF6626F53A8A00B1DC1B /* grsclass */ = {
 			isa = PBXGroup;
 			children = (
-				9786FF6226F52C9E00B1DC1B /* light.swift */,
+				9786FF6226F52C9E00B1DC1B /* lightObj.swift */,
 				9786FF6426F52CBA00B1DC1B /* threeDObject.swift */,
-				9786FF6026F52C8200B1DC1B /* camre.swift */,
+				9786FF6026F52C8200B1DC1B /* camraObj.swift */,
 			);
 			path = grsclass;
 			sourceTree = "<group>";
@@ -274,10 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9786FF6126F52C8200B1DC1B /* camre.swift in Sources */,
+				9786FF6126F52C8200B1DC1B /* camraObj.swift in Sources */,
 				9786FF6526F52CBA00B1DC1B /* threeDObject.swift in Sources */,
 				9786FF3526F51EC700B1DC1B /* GameViewController.swift in Sources */,
-				9786FF6326F52C9E00B1DC1B /* light.swift in Sources */,
+				9786FF6326F52C9E00B1DC1B /* lightObj.swift in Sources */,
 				9786FF3326F51EC700B1DC1B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
